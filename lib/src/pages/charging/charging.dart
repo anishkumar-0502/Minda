@@ -224,8 +224,6 @@ Future<void> updateSessionPriceToUser() async {
   try {
     handleAlertLoadingStart(context); // Show loading dialog
 
-    await Future.delayed(const Duration(seconds: 2));
-
     var url = Uri.parse('http://122.166.210.142:8052/getUpdatedCharingDetails');
     var body = {
       'chargerID': chargerID,
